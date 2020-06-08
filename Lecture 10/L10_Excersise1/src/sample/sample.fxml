@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="91.0" layoutY="23.0" text="Thread 1" />
+      <Button fx:id="button" layoutX="304.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnclick" text="Start Threads" />
+      <Label layoutX="15.0" layoutY="88.0" text="Name :" />
+      <Label layoutX="15.0" layoutY="132.0" text="Family :" />
+      <Label layoutX="15.0" layoutY="179.0" text="Age :" />
+      <TextField fx:id="txtfieldname" layoutX="65.0" layoutY="84.0" />
+      <TextField fx:id="txtfieldfamily" layoutX="65.0" layoutY="128.0" />
+      <TextField fx:id="txtfieldage" layoutX="65.0" layoutY="175.0" />
+      <Label layoutX="68.0" layoutY="51.0" text="Insert into database" />
+      <Label layoutX="319.0" layoutY="23.0" text="Thread 2" />
+      <TableView fx:id="table" layoutX="243.0" layoutY="81.0" prefHeight="123.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="columnname" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="columnfamily" prefWidth="75.0" text="Family" />
+            <TableColumn fx:id="columnage" prefWidth="50.0" text="Age" />
+        </columns>
+      </TableView>
+      <Label layoutX="280.0" layoutY="51.0" text="Get data from database" />
+      <Label layoutX="536.0" layoutY="23.0" text="Thread 3" />
+      <Label layoutX="513.0" layoutY="51.0" text="Show file content" />
+      <TextArea fx:id="txtarea" editable="false" layoutX="459.0" layoutY="79.0" prefHeight="123.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
