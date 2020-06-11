@@ -41,7 +41,7 @@ public class Main {
 
         } catch (ClassNotFoundException e)// if no lib files are added
         {
-            System.out.println("DB Driver Not Exist!!");
+            System.out.println("DB Driver  Not Exist!!");
         } catch (SQLException e)
         {
             System.out.println("DB ERROR " + e.getMessage());
