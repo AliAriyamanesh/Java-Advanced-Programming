@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="225.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.Controller">
+   <children>
+      <Pane fx:id="pane1" layoutX="10.0" layoutY="10.0" prefHeight="280.0" prefWidth="205.0" style="-fx-background-color: #E8E8E8; -fx-background-radius: 1em;">
+         <children>
+            <TextField fx:id="username" alignment="CENTER" layoutX="16.0" layoutY="67.0" prefHeight="25.0" prefWidth="180.0" promptText="Username" />
+            <Label layoutX="59.0" layoutY="7.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#0099a4" />
+               </effect>
+            </Label>
+            <TextField fx:id="password" alignment="CENTER" layoutX="16.0" layoutY="105.0" prefHeight="25.0" prefWidth="180.0" promptText="Password" />
+            <Button fx:id="button1" layoutX="70.0" layoutY="241.0" mnemonicParsing="false" onAction="#onEnter" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #0099a4; -fx-background-radius: 10em;" text="Enter" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane2" layoutX="10.0" layoutY="10.0" prefHeight="280.0" prefWidth="205.0" style="-fx-background-color: #E8E8E8; -fx-background-radius: 1em;" visible="false">
+         <children>
+            <Button fx:id="button2" layoutX="70.0" layoutY="241.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="73.0" style="-fx-background-color: #0099a4; -fx-background-radius: 10em;" text="Add" textFill="WHITE" />
+            <RadioButton fx:id="rb1" layoutX="55.0" layoutY="45.0" mnemonicParsing="false" onMousePressed="#setPlan" text="2GB       1000 $" textFill="WHITE">
+               <effect>
+                  <DropShadow color="#0099a4" />
+               </effect>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tt" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rb2" layoutX="55.0" layoutY="75.0" mnemonicParsing="false" onMousePressed="#setPlan" text="4GB       2000 $" textFill="WHITE" toggleGroup="$tt">
+               <effect>
+                  <DropShadow color="#0099a4" />
+               </effect>
+            </RadioButton>
+            <RadioButton fx:id="rb3" layoutX="55.0" layoutY="105.0" mnemonicParsing="false" onMousePressed="#setPlan" text="10GB     5000 $" textFill="WHITE" toggleGroup="$tt">
+               <effect>
+                  <DropShadow color="#0099a4" />
+               </effect>
+            </RadioButton>
+            <RadioButton fx:id="rb4" layoutX="55.0" layoutY="135.0" mnemonicParsing="false" onMousePressed="#setPlan" text="25GB   10000 $" textFill="WHITE" toggleGroup="$tt">
+               <effect>
+                  <DropShadow color="#0099a4" />
+               </effect>
+            </RadioButton>
+            <Label layoutX="29.0" layoutY="10.0" text="Choose your data plan" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#0099a4" />
+               </effect>
+            </Label>
+            <Label layoutX="14.0" layoutY="203.0" text="Status :" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#0099a4" />
+               </effect>
+            </Label>
+            <Label fx:id="dstat" layoutX="78.0" layoutY="203.0" text="GB" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#0099a4" />
+               </effect>
+            </Label>
+            <Label fx:id="vstat" layoutX="122.0" layoutY="203.0" text="\$" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#0099a4" />
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
