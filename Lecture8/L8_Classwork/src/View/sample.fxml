@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ViewController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="291.0" prefWidth="200.0" style="-fx-background-color: #E8E8E8; -fx-background-radius: 2em; -fx-border-color: #55b0b9; -fx-border-radius: 2em;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3333333432674408" green="0.6901960968971252" blue="0.7254902124404907" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="23.0" prefWidth="81.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.3333333432674408" green="0.6901960968971252" blue="0.7254902124404907" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="signinname" layoutX="26.0" layoutY="47.0" promptText="Name" style="-fx-border-color: #55b0b9; -fx-border-radius: 2px;" />
+            <TextField fx:id="signinusername" layoutX="26.0" layoutY="87.0" promptText="Username" style="-fx-border-color: #55b0b9; -fx-border-radius: 2px;" />
+            <TextField fx:id="signinpassword" layoutX="26.0" layoutY="127.0" promptText="Password" style="-fx-border-color: #55b0b9; -fx-border-radius: 2px;" />
+            <TextField fx:id="signinemail" layoutX="26.0" layoutY="167.0" promptText="E-mail" style="-fx-border-color: #55b0b9; -fx-border-radius: 2px;" />
+            <Button id="button" fx:id="signup" layoutX="60.0" layoutY="252.0" mnemonicParsing="false" onAction="#signupButton" prefHeight="25.0" prefWidth="81.0" stylesheets="@style.css" text="Sign Up" textFill="WHITE">
+               <effect>
+                  <DropShadow color="#55b0b9" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="220.0" layoutY="10.0" prefHeight="291.0" prefWidth="200.0" style="-fx-background-color: #E8E8E8; -fx-background-radius: 2em; -fx-border-color: #55b0b9; -fx-border-radius: 2em;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.3333333432674408" green="0.6901960968971252" blue="0.7254902124404907" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="60.0" layoutY="14.0" prefHeight="23.0" prefWidth="81.0" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.3333333432674408" green="0.6901960968971252" blue="0.7254902124404907" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+            <TextField fx:id="signupusername" layoutX="26.0" layoutY="47.0" promptText="Username" style="-fx-border-color: #55b0b9; -fx-border-radius: 2px;" />
+            <TextField fx:id="signuppassword" layoutX="26.0" layoutY="87.0" promptText="Password" style="-fx-border-color: #55b0b9; -fx-border-radius: 2px;" />
+            <Button fx:id="signin" layoutX="60.0" layoutY="252.0" mnemonicParsing="false" onAction="#signinButton" prefHeight="25.0" prefWidth="81.0" stylesheets="@style.css" text="Login" textFill="WHITE">
+               <effect>
+                  <DropShadow color="#55b0b9" />
+               </effect>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

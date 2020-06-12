@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="74.0" layoutY="21.0" text="فرم استخدام" textAlignment="CENTER" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="60.0" prefWidth="210.0" promptText="نام " />
+      <TextField fx:id="family" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="90.0" prefWidth="210.0" promptText="نام خانوادگی" />
+      <TextField fx:id="father" alignment="CENTER_RIGHT" layoutX="15.0" layoutY="120.0" prefWidth="210.0" promptText="نام پدر" />
+      <ComboBox fx:id="jens" layoutX="15.0" layoutY="150.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="210.0" promptText="جنسیت" />
+      <DatePicker fx:id="datepicker" layoutX="15.0" layoutY="180.0" prefHeight="25.0" prefWidth="210.0" promptText="تاریخ تولد" />
+      <Button fx:id="button" layoutX="85.0" layoutY="210.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="70.0" text="ثبت" />
+   </children>
+</AnchorPane>
